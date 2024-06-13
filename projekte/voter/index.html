@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/0bfe639dae.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Voter</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-4 offset-xl-4">
+            <div class="card mt-5">
+              <div class="card-header"
+              v-bind:class="cardHeaderBackgroundColor"
+              >
+                <h2 class="card-title" 
+                v-bind:style="cardTitleFontSize"
+                >
+                  Stimme jetzt ab!</h2>
+                <span class="float-end">{{ totalVotes }} Stimmen</span>
+              </div>
+              <div class="card-body">
+                <template
+                  v-for="(submission, index) in sortedSubmissions"
+                  :key="submission.id"
+                >
+                <submission-list-item 
+                :submission="submission"
+                ></submission-list-item>
+                <hr />
+                </template>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="seed.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nachrichten</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Aktuelle Nachrichten</h1>
+
+      <div class="selectionContainer">
+        <label for="category"></label>
+        <select id="category">
+          <option value="business">Business</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="general">Allgemeines</option>
+          <option value="health">Gesundheit</option>
+          <option value="science">Wissenschaft</option>
+          <option value="sports">Sport</option>
+          <option value="technology">Technologie</option>
+        </select>
+        <button id="fetchCategory">Suchen</button>
+      </div>
+
+      <div class="searchContainer">
+        <input
+          type="text"
+          id="searchKeyword"
+          placeholder="Suche Nachrichten..."
+        />
+        <button id="searchButton">Suchen</button>
+      </div>
+      <div id="newsContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

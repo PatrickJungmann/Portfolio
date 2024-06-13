@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Fylo</title>
+  </head>
+  <body class="dark:bg-darkBlue dark:text-white font-opensans">
+    <!-- Header -->
+    <header class="container mx-auto mt-10 px-6 text-center h-40 md:h-20">
+      <!-- Dynamic Logo -->
+      <div
+        class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10"
+      ></div>
+      <!-- Menu -->
+      <div
+        class="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10"
+      >
+        <a href="#features" class="hover:text-accentCyan">Features</a>
+        <a href="#bewertungen" class="hover:text-accentCyan">Bewertungen</a>
+
+        <!-- Dark/Light Mode Switch Button -->
+        <button
+          id="theme-toggle"
+          class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 5"
+        >
+          <!-- Dark Icon -->
+          <svg
+            id="theme-toggle-dark-icon"
+            class="w-5 h-5 hidden"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+            ></path>
+          </svg>
+          <!-- Light Icon -->
+          <svg
+            id="theme-toggle-light-icon"
+            class="w-5 h-5 hidden"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="bg-curvy-light-mode dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom"
+    >
+      <!-- Hero Container -->
+      <div class="container mx-auto text-center md:pt-20 pb-52">
+        <img src="images/illustration-intro.png" alt="" class="mx-auto" />
+        <h1
+          class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl"
+        >
+          Alle Ihre Dateien an einem sicheren Ort, der überall zugänglich ist.
+        </h1>
+        <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg">
+          Fylo speichert alle Ihre wichtigsten Dateien an einem sicheren Ort.
+          Greifen Sie darauf zu, wo Sie möchten, teilen Sie diese mit Freunden,
+          Familie und Kollegen und nutzen Sie diese gemeinsam.
+        </p>
+        <button class="p-3 rounded-full w-52 bg-accentCyan hover:scale-95">
+          Erste Schritte
+        </button>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="pt-12 bg-gray-50 dark:bg-darkBlue1">
+      <!-- Features Container -->
+      <div class="container mx-auto px-6 pb-32">
+        <!-- First Row -->
+        <div
+          class="flex flex-col space-y-24 text-center md:flex-row md:space-y-0"
+        >
+          <!-- Item 1 -->
+          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+            <div class="flex items-center justify-center h-24 mb-6">
+              <img src="images/icon-access-anywhere.svg" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">
+              Zugriff auf Ihre Datei von überall
+            </h3>
+            <p class="max-w-md">
+              Durch die Zugangsmöglichkeit über ein Smartphone, ein Tablet oder
+              einen Computer können Sie Ihre Dateien überallhin mitnehmen.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+            <div class="flex items-center justify-center h-24 mb-6">
+              <img src="images/icon-security.svg" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">
+              Sicherheit, der Sie vertrauen können
+            </h3>
+            <p class="max-w-md">
+              2-Faktor-Authentifizierung und benutzergesteuerte Verschlüsselung
+              sind nur einige der Sicherheitsfunktionen, mit denen wir Ihre
+              Dateien schützen.
+            </p>
+          </div>
+        </div>
+
+        <!-- Second Row -->
+        <div
+          class="flex flex-col space-y-24 mt-28 text-center md:flex-row md:space-y-0"
+        >
+          <!-- Item 3 -->
+          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+            <div class="flex items-center justify-center h-24 mb-6">
+              <img src="images/icon-collaboration.svg" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">
+              Zugriff auf Ihre Datei von überall
+            </h3>
+            <p class="max-w-md">
+              Durch die Zugangsmöglichkeit über ein Smartphone, ein Tablet oder
+              einen Computer können Sie Ihre Dateien überallhin mitnehmen.
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+            <div class="flex items-center justify-center h-24 mb-6">
+              <img src="images/icon-any-file.svg" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">
+              Sicherheit, der Sie vertrauen können
+            </h3>
+            <p class="max-w-md">
+              2-Faktor-Authentifizierung und benutzergesteuerte Verschlüsselung
+              sind nur einige der Sicherheitsfunktionen, mit denen wir Ihre
+              Dateien schützen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productive Section -->
+    <section id="productive" class="bg-white dark:bg-darkBlue">
+      <!-- Productive Container -->
+      <div
+        class="container flex flex-col items-center mx-auto px-6 pt-24 pb-32 md:flex-row md:space-x-16"
+      >
+        <!-- Image -->
+        <div class="md:w-1/2">
+          <img
+            src="images/illustration-stay-productive.png"
+            alt=""
+            class="mb-10"
+          />
+        </div>
+        <!-- Content -->
+        <div class="flex flex-col items-start md:w-1/2">
+          <div class="flex flex-col space-y-5">
+            <h4 class="max-w-md text xl font-bold md:text-4xl">
+              Bleiben Sie produktiv, wo immer Sie sind
+            </h4>
+            <p class="text-md md:text-lg">
+              Beim Zugriff auf Ihre Dateien darf der Standort nie ein Problem
+              sein. Fylo deckt alle Ihre Anforderungen an die Dateispeicherung
+              ab.
+            </p>
+
+            <p class="text-md md:text-lg">
+              Sichere Freigabe von Dateien und Ordnern mit Freunden, Familie und
+              Kollegen für die Live-Zusammenarbeit. Keine E-Mail-Anhänge
+              erforderlich.
+            </p>
+          </div>
+          <!-- Link -->
+          <div class="block mt-4">
+            <a href="#" class="border-b border-x-accentCyan text-accentCyan"
+              >Erfahren Sie, wie Flyo funktioniert
+              <img src="images/icon-arrow.svg" alt="" class="inline pb-2" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

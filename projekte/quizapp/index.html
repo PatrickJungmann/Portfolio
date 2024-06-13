@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #1f2937;
+      }
+
+      .divider {
+        height: 2px;
+        background-color: #cbd5e0;
+        margin: 20px auto;
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex justify-center items-center text-center">
+    <div
+      id="quiz-container"
+      class="bg-gray-200 p-8 rounded-lg w-96 shadow-2xl transition-opacity duration-500"
+    >
+      <div class="mb-4">
+        <h1 id="question" class="text-lg font-semibold"></h1>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="mb-4">
+        <div id="answers" class="flex justify-center items-center space-x-4">
+          <button
+            class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300 ease-in-out"
+          >
+            Antwort 1
+          </button>
+          <button
+            class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300 ease-in-out"
+          >
+            Antwort 2
+          </button>
+          <button
+            class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300 ease-in-out"
+          >
+            Antwort 3
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="result"
+      hidden="true"
+      class="bg-white p-8 rounded-lg w-96 transition-opacity duration-500"
+    >
+      <div class="mb-4">
+        <h1 class="text-lg font-semibold">Quiz beendet!</h1>
+      </div>
+      <div class="mb-4">
+        <p>
+          Punktzahl: <br />
+          <span id="score" class="font-semibold"></span>
+        </p>
+      </div>
+      <div>
+        <p>Ich freue mich von Ihnen zu hören!</p>
+      </div>
+      <div class="mt-4">
+        <button
+          class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300 ease-in-out"
+        >
+          <a href="https://www.linkedin.com/in/patrick-jungmann/">LinkedIn</a>
+        </button>
+        <button
+          class="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-900 transition-colors duration-300 ease-in-out"
+        >
+          <a href="https://www.xing.com/profile/Patrick_Jungmann12">Xing</a>
+        </button>
+        <button
+          class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition-colors duration-300 ease-in-out"
+        >
+          <a href="https://github.com/PatrickJungmann">Github</a>
+        </button>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>
