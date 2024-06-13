@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Portfolio/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/Portfolio/css/style.css" />
+
+    <title>Dev - Patrick Jungmann</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <section id="nav">
+      <!-- Nav Container -->
+      <div class="container max-w-full mx-auto px-10 py-5">
+        <!-- Logo & Menü Container -->
+        <nav class="flex items-center justify-between font-bold lg:text-xl">
+          <!-- Logo -->
+          <img src="/Portfolio/images/logo.svg" alt="Logo" class="w-36" />
+          <!-- Menü -->
+          <div class="h-10 font-alata md:flex md:space-x-8 hidden">
+            <div class="group">
+              <a href="#uebermich">Über mich</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-black duration-300"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#projekte">Projekte</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-black duration-300"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#footer">Kontakt</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-black duration-300"
+              ></div>
+            </div>
+          </div>
+          <!-- Hamburger Button -->
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              type="button"
+              class="z-40 block hamburger md:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- Mobile Menü -->
+        <div
+          id="menu"
+          class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-black uppercase bg-neutral-300 opacity-90"
+        >
+          <a href="#uebermich">Über mich</a>
+          <a href="#projekte">Projekte</a>
+          <a href="#footer">Kontakt</a>
+        </div>
+
+        <div class="flex justify-center mt-4 mb-28">
+          <img
+            src="/Portfolio/images/Bewerbungsfoto.png"
+            alt=""
+            class="w-96 rounded-3xl shadow-xl shadow-black md:w-5/12"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Über mich -->
+    <section id="uebermich" class="border-t-2 border-neutral-400">
+      <!-- Über mich Container -->
+      <div
+        class="relative container flex flex-col max-w-6xl mx-auto my-36 px-6 text-gray-900 md:flex-row md:px-0"
+      >
+        <!-- Foto -->
+        <img
+          src="/Portfolio/images/ueberMich2.PNG"
+          alt=""
+          class="h-full shadow-lg shadow-black rounded-lg image-hidden"
+        />
+        <!-- Text Container -->
+        <div
+          id="textContainer"
+          class="text-hidden top-16 px-10 pb-10 rounded-lg md:absolute md:right-0 md:py-14 md:pl-14 bg-stone-50 shadow-lg shadow-black"
+        >
+          <h2
+            class="max-w-lg mt-10 mb-6 font-sans text-4xl text-center text-gray-900 uppercase md:text-5xl md:mt-0 md:ml-0 md:text-left"
+          >
+            Über mich
+          </h2>
+          <p class="max-w-md text-center md:text-left">
+            In den letzten Jahren war ich im vertrieblichen Außendienst im
+            Lebensmitteleinzelhandel tätig. <br />Von Juli 2023 bis Januar 2024
+            habe ich eine Online-Fortbildung zum Full Stack Entwickler
+            absolviert. Im Anschluss habe ich mich mit Udemy-Kursen und eigenen
+            Projekten weitergebildet. <br /><br />
+            Tischtennis und Gaming zählen zu meinen größten Hobbys, und im
+            Sommer besuche ich sehr gerne zwei bis drei Festivals.
+            <br /><br />
+            Ich wünsche viel Spaß beim Entdecken meiner Projekte.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projekte -->
+    <section id="projekte">
+      <!-- Projekte Container -->
+      <div class="container max-w-6xl mx-auto my-32 px-6 text-gray-900 md:px-0">
+        <!-- Projekte Überschrift -->
+        <div class="flex justify-center mb-20 md:justify-between">
+          <h2 class="text-4xl text-center uppercase md:text-left md:text-5xl">
+            Meine Projekte
+          </h2>
+        </div>
+
+        <!-- Items Container -->
+        <div class="item-container mb-6">
+          <!-- Item 1 -->
+          <div class="group item">
+            <!-- Desktop Bild -->
+            <img
+              src="/Portfolio/images/Genussdienst.png"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <!-- Mobile Bild -->
+            <img
+              src="/Portfolio/images/Genussdienst.JPG"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <a href="http://www.genussdienst.de" target="_blank">
+              <!-- Item Verlauf Effekt -->
+              <div class="item-gradient"></div>
+              <!-- Item Text -->
+              <h5>Genussdienst</h5>
+            </a>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="group item">
+            <!-- Desktop Bild -->
+            <img
+              src="/Portfolio/images/Terminkalender3.png"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <!-- Mobile Bild -->
+            <img
+              src="/Portfolio/images/Terminkalender3.png"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <a href="https://terminkalender-vue-js.vercel.app/" target="_blank">
+              <!-- Item Verlauf Effekt -->
+              <div class="item-gradient"></div>
+              <!-- Item Text -->
+              <h5>Terminkalender</h5>
+            </a>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="group item">
+            <!-- Desktop Bild -->
+            <img
+              src="/Portfolio/images/Fylo.png"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <!-- Mobile Bild -->
+            <img
+              src="/Portfolio/images/Fylo.png"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <a
+              href="/Portfolio/projekte/Fylo Webseite/index.html"
+              target="_blank"
+            >
+              <!-- Item Verlauf Effekt -->
+              <div class="item-gradient"></div>
+              <!-- Item Text -->
+              <h5>Fylo</h5>
+            </a>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="group item">
+            <!-- Desktop Bild -->
+            <img
+              src="/Portfolio/images/shortly.png"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <!-- Mobile Bild -->
+            <img
+              src="/Portfolio/images/shortly.png"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <a
+              href="/Portfolio/projekte/Shortly Webseite/index.html"
+              target="_blank"
+            >
+              <!-- Item Verlauf Effekt -->
+              <div class="item-gradient"></div>
+              <!-- Item Text -->
+              <h5>Shortly</h5>
+            </a>
+          </div>
+        </div>
+
+        <!-- Items Container 2 -->
+        <div class="item-container">
+          <!-- Item 1 -->
+          <div class="group item">
+            <!-- Desktop Bild -->
+            <img
+              src="/Portfolio/images/News4.png"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <!-- Mobile Bild -->
+            <img
+              src="/Portfolio/images/News4.png"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <a href="/Portfolio/projekte/news/index.html" target="_blank">
+              <!-- Item Verlauf Effekt -->
+              <div class="item-gradient"></div>
+              <!-- Item Text -->
+              <h5>News</h5>
+              3
+            </a>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="group item">
+            <!-- Desktop Bild -->
+            <img
+              src="/Portfolio/images/Voter1.png"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <!-- Mobile Bild -->
+            <img
+              src="/Portfolio/images/Voter1.png"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <a href="/Portfolio/projekte/voter/index.html" target="_blank">
+              <!-- Item Verlauf Effekt -->
+              <div class="item-gradient"></div>
+              <!-- Item Text -->
+              <h5>Voter</h5>
+            </a>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="group item">
+            <!-- Desktop Bild -->
+            <img
+              src="/Portfolio/images/Fortschritssanzeige.png"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <!-- Mobile Bild -->
+            <img
+              src="/Portfolio/images/Fortschritssanzeige.png"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <!-- Item Verlauf Effekt -->
+            <a
+              href="/Portfolio/projekte/Fortschrittsanzeige/index.html"
+              target="_blank"
+            >
+              <div class="item-gradient"></div>
+              <!-- Item Text -->
+              <h5>Fortschritt</h5>
+            </a>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="group item">
+            <!-- Desktop Bild -->
+            <img
+              src="/Portfolio/images/QuizApp2.png"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <!-- Mobile Bild -->
+            <img
+              src="/Portfolio/images/QuizApp2.png"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <!-- Item Verlauf Effekt -->
+            <a href="/Portfolio/projekte/quizapp/index.html" target="_blank">
+              <div class="item-gradient"></div>
+              <!-- Item Text -->
+              <h5>Quiz App</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="border-t-2 border-neutral-400">
+      <!-- Kontakt Container -->
+      <div
+        class="flex flex-col items-center mx-auto my-32 px-6 text-gray-900 md:px-0"
+      >
+        <h2
+          class="font-sans mt-10 mb-6 text-center text-xl text-gray-900 uppercase md:text-5xl md:mt-0 md:ml-0 md:text-left"
+        >
+          Ich freue mich auf unser kennenlernen!
+        </h2>
+        <button
+          type="button"
+          class="px-5 py-2.5 text-lg font-medium text-white inline-flex items-center shadow-lg shadow-black bg-gray-700 hover:translate-y-1 hover:translate-x-1 duration-300 hover:bg-gray-800 focus:ring-2 focus:outline-none focus:ring-black rounded-lg text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-black"
+        >
+          <svg
+            class="w-4 h-4 text-white me-2"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 16"
+          >
+            <path
+              d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"
+            />
+            <path
+              d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"
+            />
+          </svg>
+          <a href="mailto:jungmann_patrick@yahoo.com"
+            >jungmann_patrick@yahoo.com</a
+          >
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="border-t-2 border-neutral-400">
+      <!-- Container -->
+      <div
+        class="container flex flex-col items-center justify-center py-10 mx-auto"
+      >
+        <!-- Socials Container -->
+        <div
+          class="flex flex-col items-start justify-between space-y-6 mb-6 mt-2 text-gray-500"
+        >
+          <!-- Icons Container -->
+          <div
+            class="flex items-center justify-center mx-auto space-x-4 md:justify-end md:mx-0"
+          >
+            <!-- Github -->
+            <div class="h-8 group">
+              <a href="https://github.com/PatrickJungmann" target="_blank">
+                <img
+                  src="/Portfolio/images/github-mark.svg"
+                  alt=""
+                  class="h-8 hover:translate-y-1 hover:scale-95 duration-300"
+                />
+              </a>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="h-8 group">
+              <a
+                href="https://www.linkedin.com/in/patrick-jungmann/"
+                target="_blank"
+              >
+                <img
+                  src="/Portfolio/images/linkedin.svg"
+                  alt=""
+                  class="h-8 hover:translate-y-1 hover:scale-95 duration-300"
+                />
+              </a>
+            </div>
+
+            <!-- Xing -->
+            <div class="h-8 group">
+              <a
+                href="https://www.xing.com/profile/Patrick_Jungmann12/web_profiles"
+                target="_blank"
+              >
+                <img
+                  src="/Portfolio/images/xing.svg"
+                  alt=""
+                  class="h-8 hover:translate-y-1 hover:scale-95 duration-300"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menü Container -->
+        <div
+          class="flex flex-col justify-center items-center md:flex-row md:space-y-0 md:justify-between md:items-start"
+        >
+          <!-- Menü -->
+          <div
+            class="flex flex-col items-center justify-center text-xl text-black font-bold md:flex-row md:space-y-0 md:space-x-6 md:ml-3"
+          >
+            <!-- Item -->
+            <div class="h-10 group">
+              <a href="#">Bring mich wieder hoch!</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-black duration-300"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/Portfolio/js/script.js" defer></script>
+  </body>
+</html>
